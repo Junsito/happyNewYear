@@ -1,0 +1,39 @@
+/* Estilo base para el encabezado h2 */
+#iniciar {
+    font-size: 36px; /* Tamaño grande para el encabezado */
+    font-weight: bold; /* Negrita */
+    color: #fdf360; /* Color base oscuro */
+    text-align: center; /* Centrado */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    padding: 20px; /* Espaciado alrededor del texto */
+    transition: all 0.3s ease-in-out; /* Animación suave para el efecto hover */
+}
+
+/* Efecto al pasar el ratón (hover) */
+#iniciar:hover {
+    color: white; /* Cambiar color de texto */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7); /* Resplandor alrededor del texto */
+    transform: scale(1.05); /* Aumentar ligeramente el tamaño */
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Para evitar barras de desplazamiento */
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-fluid {
+    position: absolute; /* El texto estará sobre el canvas */
+    z-index: 10; /* Asegura que el texto esté sobre los fuegos */
+    color: white;
+}
